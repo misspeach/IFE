@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task21</title>
+    <script src="task21-t.js"></script>
+    <style>
+        .result1{
+            height: 35px;
+            margin: 10px;
+        }
+        .result1 div {
+            margin: 5px;
+            padding: 5px;
+            background-color: red;
+            text-align: center;
+            float: left;
+            color: white;
+            font-weight: bold;
+            height: 20px;
+            line-height: 20px;
+        }
+        #hobbiesResult div {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<div class="center">
+    <div>
+        <div>
+            <span>Tag:</span>
+            <span><input type="text" id="tags" placeholder="请输入标签，以空格、逗号和回车作为分隔，只显示最新10个。"></span>
+        </div>
+        <div class="result1" id="tagResult"></div>
+    </div>
+    <div>
+        <textarea id="hobby" rows="5" cols="25" placeholder="请输入兴趣爱好，以回车、空格、逗号、顿号作为分隔，只显示最新10个。"></textarea><br>
+        <button id="confirm">确认兴趣爱好</button>
+        <div class="result1" id="hobbiesResult"></div>
+    </div>
+</div>
+</body>
+</html>
