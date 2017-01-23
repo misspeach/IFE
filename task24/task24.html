@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task24</title>
+    <style>
+        .box {
+            display: -webkit-flex;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            background-color: white;
+            margin: 3px 5px 3px 5px;
+            padding: 5px 0px 5px 0px;
+            border: 1px solid black;
+        }
+        .first_txt {
+            /*改变某个元素的交叉轴对齐方式*/
+            align-self: flex-start;
+        }
+        #content{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="ops">
+    <button>前序遍历</button>
+    <button>后序遍历</button>
+</div>
+<div style="margin-top: 10px">
+    <input type="text" value="">
+    <button id="search">查 询</button>
+</div>
+<div style="margin-top: 10px">
+    <button id="del">删除节点</button>
+    <span><input type="text" value=""><button id="add">添加节点</button></span>
+</div>
+<div id="content">
+    <div class="box">
+        <div class="first_txt">Super</div>
+        <div class="box">
+            <div class="first_txt">Cat</div>
+            <div class="box">
+                <div class="first_txt">Apple</div>
+                <div class="box">
+                    <div class="first_txt">Pear</div>
+                </div>
+                <div class="box">
+                    <div class="first_txt">Pig</div>
+                </div>
+                <div class="box">
+                    <div class="first_txt">Cola</div>
+                </div>
+                <div class="box">
+                    <div class="first_txt">Soccer</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="first_txt">Phone</div>
+            </div>
+            <div class="box">
+                <div class="first_txt"></div>
+                <div class="box">
+                    <div class="first_txt">Book</div>
+                </div>
+                <div class="box">
+                    <div class="first_txt">School</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="first_txt">Note</div>
+            <div class="box">
+                <div class="first_txt">Human</div>
+                <div class="box">
+                    <div class="first_txt">Code</div>
+                </div>
+                <div class="box">
+                    <div class="first_txt">Operate</div>
+                </div>
+                <div class="box">
+                    <div class="first_txt">Man</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="first_txt">Program</div>
+                <div class="box">
+                    <div class="first_txt">Bement</div>
+                    <div class="box">
+                        <div class="first_txt">Cat</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="first_txt">Gloss</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="first_txt">Fish</div>
+        </div>
+    </div>
+</div>
+<script src="task24.js"></script>
+</body>
+</html>
