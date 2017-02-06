@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>椭圆环绕</title>
+    <style>
+        #myCanvas {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+<canvas id="myCanvas"></canvas>
+<script>
+    var SCREEN_CENTER_X = 400,
+        SCREEN_CENTER_Y = 400,
+        a = 200,
+        b = 50,
+        time = 0;
+    var animUtil = (function () {
+        var c = document.getElementById('myCanvas');
+        c.width = 800;
+        c.height = 800;
+        var ctx = c.getContext('2d');
+
+        function drawPlanet() {
+            var gradient = ctx.createRadialGradient(SCREEN_CENTER_X, SCREEN_CENTER_Y, 10, SCREEN_CENTER_X, SCREEN_CENTER_Y, 20);
+            gradient.addColorStop(0, 'pink');
+            gradient.addColorStop(1, 'yellow');
+            ctx.fillStyle = gradient;
+            ctx.beginPath();
+            ctx.arc(SCREEN_CENTER_X, SCREEN_CENTER_Y, 20, 0, 2 * Math.PI, false);
+            ctx.fill();
+        }
+
+        function drawOrbit() {
+            var step = (a > b) ? 1 / a : 1 / b,
+                x = SCREEN_CENTER_X,
+                y = SCREEN_CENTER_Y;
+            ctx.strokeStyle = 'grey';
+            ctx.beginPath();
+            //水平轨道
+            ctx.moveTo(x - a, y);//从椭圆最左端开始
+            for (var i = 0; i < 2 * Math.PI; i += step)
+                ctx.lineTo(x - a * Math.cos(i), y - b * Math.sin(i));
+
+            //垂直轨道
+            step = 1 / b;
+            ctx.moveTo(x - b, y);
+            for (var i = 0; i < 2 * Math.PI; i += step)
+                ctx.lineTo(x - b * Math.cos(i), y - a * Math.sin(i));
+
+            ctx.closePath();
+            ctx.stroke();
+        }
+
+        function drawAirship(x, y) {
+            ctx.fillStyle = 'blue';
+            ctx.beginPath();
+            ctx.arc(x, y, 5, 0, 2 * Math.PI, false);
+            ctx.closePath();
+            ctx.fill();
+        }
+
+        function initSetting() {
+            ctx.clearRect(0, 0, 800, 800);
+            drawPlanet();
+            drawOrbit();
+        }
+
+        function onDraw() {
+
+            setInterval(function () {
+                initSetting();
+                if (time >= 360)
+                    time = 0;
+                //水平环绕
+                var x = SCREEN_CENTER_X,
+                    y = SCREEN_CENTER_Y;
+                x = x + a * Math.cos(time);
+                y = y - b * Math.sin(time);
+                drawAirship(x, y);
+                //垂直环绕
+                var x = SCREEN_CENTER_X,
+                    y = SCREEN_CENTER_Y;
+                x = x - b * Math.cos(time);
+                y = y - a * Math.sin(time);
+                drawAirship(x, y);
+                time += 1;
+            }, 300);
+        }
+
+        return {
+            onDraw: onDraw
+        };
+    })();
+    window.onload = function () {
+        animUtil.onDraw();
+    };
+</script>
+
+</body>
+</html>
