@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task30</title>
+    <style>
+        body {
+            font: 14px 'Microsoft YaHei', 微软雅黑;
+        }
+
+        input {
+            font: inherit;
+            border: 1px solid darkgray;
+            border-radius: 4px;
+            width: 348px;
+            height: auto;
+            /*margin: 0 5px 0 20px;*/
+            /*input输入框会有默认的padding*/
+            padding: 8px 16px;
+            vertical-align: middle;
+            outline: none;
+        }
+
+        .input-right {
+            font: inherit;
+            border: 1px solid green;
+            border-radius: 4px;
+            width: 348px;
+            height: auto;
+            /*margin: 0 5px 0 20px;*/
+            /*input输入框会有默认的padding*/
+            padding: 8px 16px;
+            vertical-align: middle;
+            outline: none;
+        }
+
+        .input-wrong {
+            font: inherit;
+            border: 1px solid red;
+            border-radius: 4px;
+            width: 348px;
+            height: auto;
+            /*margin: 0 5px 0 20px;*/
+            /*input输入框会有默认的padding*/
+            padding: 8px 16px;
+            vertical-align: middle;
+            outline: none;
+        }
+
+        input:focus {
+
+            box-shadow: 0 0 3px dodgerblue;
+            -webkit-box-shadow: 0 0 3px dodgerblue;
+        }
+
+        #btn {
+            font: inherit;
+            border-radius: 4px;
+            border: 1px solid #fff;
+            background-color: dodgerblue;
+            color: #fff;
+            cursor: pointer;
+            padding: 8px 16px;
+            height: auto;
+            /*margin-top: 20px;*/
+        }
+
+        td:first-child {
+            text-align: right;
+            vertical-align: top;
+        }
+
+        div:first-child {
+            margin: 0 0 10px 10px;
+        }
+
+        .tip-invisible {
+            display: none;
+        }
+
+        .tip-focus {
+            display: block;
+            color: darkgray;
+        }
+
+        .tip-blur-right {
+            display: block;
+            color: green;
+        }
+
+        .tip-blur-wrong {
+            display: block;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td>名称</td>
+        <td>
+            <div><input id="name" type="text"/>
+                <div class="tip-invisible"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>密码</td>
+        <td>
+            <div><input id="pwd" type="password"/>
+                <div class="tip-invisible"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>密码确认</td>
+        <td>
+            <div><input id="pwd_a" type="password"/>
+                <div class="tip-invisible"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>邮箱</td>
+        <td>
+            <div><input id="email" type="email"/>
+                <div class="tip-invisible"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>手机</td>
+        <td>
+            <div style="height: 56px"><input id="tel" type="text"/>
+                <div class="tip-invisible"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td style="text-align: right">
+            <button id="btn">验证</button>
+        </td>
+    </tr>
+</table>
+<script src="task30.js"></script>
+</body>
+</html>
