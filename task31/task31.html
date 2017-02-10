@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task31</title>
+    <style>
+        body {
+            font: 14px 'Microsoft YaHei', 微软雅黑;
+        }
+        input[type='text'] {
+            font: inherit;
+            border: 1px solid darkgray;
+            border-radius: 4px;
+            width: 348px;
+            height: auto;
+            margin-left: 20px;
+            /*input输入框会有默认的padding*/
+            padding: 8px 16px;
+            vertical-align: middle;
+            outline: none;
+        }
+
+        #selCity {
+            width: 100px;
+            margin-right: 40px;
+        }
+
+        #selUniv {
+            width: 208px;
+        }
+
+        select {
+            -webkit-appearance: none; /* To gain control over the appearance on WebKit */
+            -moz-appearance: none; /* To gain control over the appearance on Gecko */
+
+            /* To gain control over the appearance on Presto (Opera) and Trident (IE)
+               Note that it also work on Gecko and has partial effects on WebKit */
+            background: none;
+            font: inherit;
+            border: 1px solid darkgray;
+            border-radius: 4px;
+            padding: 8px 16px;
+            vertical-align: middle;
+            outline: none;
+            height: auto;
+        }
+
+        td:first-child {
+            text-align: right;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td></td>
+        <td>
+            <div style="margin: 0px 0px 10px 20px">
+                <input type="radio" name="joinType" value="student" checked/>在校生 <input type="radio" name="joinType" value="non-student"/>非在校生
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>学校</td>
+        <td>
+            <div style="margin-left:20px; width: 384px">
+                <select name="cities" id="selCity">
+                    <option value="北京">北京</option>
+                    <option value="香港">香港</option>
+                    <option value="济南">济南</option>
+                </select>
+                <select name="universities" id="selUniv">
+                    <option value="北京大学">北京大学</option>
+                    <option value="清华大学">清华大学</option>
+                    <option value="中国人民大学">中国人民大学</option>
+                </select>
+            </div>
+        </td>
+    </tr>
+    <tr style="display: none">
+        <td>就业单位</td>
+        <td><input type="text"/></td>
+    </tr>
+</table>
+
+<script src="task31.js"></script>
+</body>
+</html>
