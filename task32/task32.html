@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task32</title>
+    <link rel="stylesheet" type="text/css" href="task32.css">
+</head>
+<body>
+<fieldset id="rule">
+    <legend>规则</legend>
+    <input type="radio" id="text" name="inputType" checked/><label for="text">文本</label>
+    <input type="radio" id="number" name="inputType"/><label for="number">数字</label>
+    <input type="radio" id="password" name="inputType"/><label for="password">密码</label>
+    <input type="radio" id="email" name="inputType"/><label for="email">邮箱</label>
+    <input type="radio" id="phone" name="inputType"/><label for="phone">电话号码</label>
+</fieldset>
+<fieldset>
+    <legend>配置</legend>
+    <label>名称</label><input type="text" id="name" value="姓名"/>
+    <label>样式</label><select id="style">
+    <option>样式一</option>
+    <option>样式二</option>
+</select>
+    <label>输入提示：</label><label id="default-hint">长度限制在4～16个字符</label>
+</fieldset>
+<button id="add_form">添加</button>
+<div id="show_forms">
+    <h1 style="text-align: center">表单展示</h1>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <table id="result">
+            <tr>
+                <td></td>
+                <td style="text-align: right">
+                    <button id="check" class="invisible">验证</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<script src="FormModule.js"></script>
+<script src="dataProcessModule.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
