@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style>
+        .container{
+            margin: 0 auto;
+        }
+        .task-header {
+            background-color: darkseagreen;
+            font-size: 1.6em;
+            color: darkgreen;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+
+        .task-container {
+            background-color: lightgrey;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .task {
+            border: 2px solid #aaaaaa;
+            background-color: #fff;
+            height: 75px;
+            margin: 10px 10px;
+            padding: 5px;
+            flex: 1 0 auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        a:hover {
+            color: darkblue;
+        }
+
+        /*浏览器的最小宽度大于768*/
+        @media (min-width: 768px) {
+            .task-container .task {
+                width: 50%
+            }
+
+            .container {
+                width: 750px
+            }
+        }
+
+        /*浏览器的最小宽度大于992*/
+        @media (min-width: 992px) {
+            .task-container .task {
+                width: 33.33%;
+            }
+            .container {
+                width: 970px
+            }
+        }
+
+        /*浏览器的最小宽度大于1200*/
+        @media (min-width: 1200px) {
+            .task-container .task {
+                width: 25%;
+            }
+            .container {
+                width: 1170px
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="task-header">IFE 第二阶段任务完成展示</div>
+    <div class="task-container">
+        <div class="task"><a href="task13.html" target="_blank">任务十三：零基础JavaScript编码（一）</a></div>
+        <div class="task"><a href="task14.html" target="_blank">任务十四：零基础JavaScript编码（二）</a></div>
+        <div class="task"><a href="task15.html" target="_blank">任务十五：零基础JavaScript编码（三）</a></div>
+        <div class="task"><a href="task16/task16.html" target="_blank">任务十六：零基础JavaScript编码（四）</a></div>
+        <div class="task"><a href="task17/task17.html" target="_blank">任务十七：零基础JavaScript编码（五）</a></div>
+        <div class="task"><a href="task18/task18.html" target="_blank">任务十八：基础JavaScript练习（一）</a></div>
+        <div class="task"><a href="task19/task19.html" target="_blank">任务十九：基础JavaScript练习（二）</a></div>
+        <div class="task"><a href="task20/task20.html" target="_blank">任务二十：基础JavaScript练习（三）</a></div>
+        <div class="task"><a href="task21/task21.html" target="_blank">任务二十一：基础JavaScript练习（四）</a></div>
+        <div class="task"><a href="task22/task22.html" target="_blank">任务二十二：JavaScript和树（一）</a></div>
+        <div class="task"><a href="task23/task23.html" target="_blank">任务二十三：JavaScript和树（二）</a></div>
+        <div class="task"><a href="task24/task24.html" target="_blank">任务二十四：JavaScript和树（三）</a></div>
+        <div class="task"><a href="task25/task25.html" target="_blank">任务二十五：JavaScript和树（四）</a></div>
+        <div class="task"><a href="task26/task26.html" target="_blank">任务二十六：行星与飞船（一）</a></div>
+        <div class="task"><a href="task29/task29.html" target="_blank">任务二十九：表单（一）单个表单项的检验</a></div>
+        <div class="task"><a href="task30/task30.html" target="_blank">任务三十：表单（二）多个表单项的动态校验</a></div>
+        <div class="task"><a href="task31/task31.html" target="_blank">任务三十一：表单（三）联动</a></div>
+        <div class="task"><a href="task32/index.html" target="_blank">任务三十二：表单（四）实现表单自动生成工厂</a></div>
+    </div>
+</div>
+</body>
+</html>
