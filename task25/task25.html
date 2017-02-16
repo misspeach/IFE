@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task25</title>
+    <style>
+        body {
+            line-height: 1.42858;
+            font-size: 14px;
+        }
+
+        .current:hover > .ops {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+        }
+
+        .current:hover > .text {
+            color: blue;
+        }
+
+        .root {
+            position: relative;
+            left: 20px;
+        }
+
+        .box {
+            position: relative;
+            left: 20px;
+            display: none;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            /*border:1px solid black;*/
+            display: inline-block;
+            background: url(./task25_img/right_arow.png) no-repeat center;
+            white-space: nowrap;
+            letter-spacing: -1em;
+            text-indent: -99em;
+            /*设置文字颜色为透明 即不显示了,但是又需要文本来占位*/
+            color: transparent;
+        }
+
+        .text {
+            height: 20px;
+            display: inline-block;
+        }
+
+        .ops {
+            display: none;
+        }
+
+        .add {
+            color: transparent;
+            background: url(./task25_img/add.png) no-repeat center;
+        }
+
+        .del {
+            color: transparent;
+            background: url(./task25_img/delete.png) no-repeat center;
+        }
+    </style>
+</head>
+<body>
+<div style="margin-bottom: 10px">
+    <input type="text" value="">
+    <button id="search">查 询</button>
+</div>
+<div id="content">
+    <div class="root">
+        <div class="current">
+            <a href="javascript:" class="icon">图标</a><span class="text">Animals</span>
+            <span class="ops"><span class="add">add</span><span class="del">delete</span></span>
+        </div>
+        <div class="box">
+            <div class="current">
+                <a href="javascript:" class="icon">图标</a><span class="text">cat</span>
+                <span class="ops"><span class="add">add</span><span class="del">delete</span></span>
+            </div>
+            <div class="box">
+                <div class="current">
+                    <span class="text">black cat</span>
+                    <span class="ops"><span class="add">add</span><span class="del">delete</span></span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="current">
+                    <span class="text">white cat</span><span class="ops"><span class="add">add</span><span class="del">delete</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="current">
+                <a href="javascript:" class="icon">图标</a><span class="text">dog</span>
+                <span class="ops"><span class="add">add</span><span class="del">delete</span></span>
+            </div>
+            <div class="box">
+                <div class="current">
+                    <span class="text">spotted dog</span>
+                    <span class="ops"><span class="add">add</span><span class="del">delete</span></span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="current">
+                    <span class="text">striped dog</span>
+                    <span class="ops"><span class="add">add</span><span class="del">delete</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="root">
+        <div class="current">
+            <a href="javascript:" class="icon">图标</a><span class="text">Fruits</span>
+            <span class="ops"><span class="add">add</span><span class="del">delete</span></span>
+        </div>
+        <div class="box">
+            <div class="current">
+                <a href="javascript:" class="icon">图标</a><span class="text">sweet</span>
+                <span class="ops"><span class="add">add</span><span class="del">delete</span></span>
+            </div>
+            <div class="box">
+                <div class="current">
+                    <span class="text">banana</span><span class="ops"><span class="add">add</span><span class="del">delete</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="current"><span class="text">sour</span><span class="ops"><span class="add">add</span><span
+                    class="del">delete</span></span>
+            </div>
+        </div>
+    </div>
+    <div class="root">
+        <div class="current">
+            <a href="javascript:" class="icon">图标</a><span class="text">Books</span>
+            <span class="ops"><span class="add">add</span><span class="del">delete</span></span>
+        </div>
+        <div class="box">
+            <div class="current"><span class="text">art</span><span class="ops"><span class="add">add</span><span
+                    class="del">delete</span></span>
+            </div>
+        </div>
+        <div class="box">
+            <div class="current">
+                <a href="javascript:" class="icon">图标</a><span class="text">science</span>
+                <span class="ops"><span class="add">add</span><span class="del">delete</span></span>
+            </div>
+            <div class="box">
+                <div class="current">
+                    <a href="javascript:" class="icon">图标</a><span class="text">programme</span>
+                    <span class="ops"><span class="add">add</span><span class="del">delete</span></span>
+                </div>
+                <div class="box">
+                    <div class="current"><span class="text">JavaScript</span><span class="ops"><span
+                            class="add">add</span><span class="del">delete</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="current"><span class="text">math</span><span class="ops"><span class="add">add</span><span
+                        class="del">delete</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="task25.js"></script>
+</body>
+</html>

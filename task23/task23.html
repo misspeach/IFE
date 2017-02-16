@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task23</title>
+    <style>
+        .root {
+            height: 92px;
+            width: 900px;
+            border: 1px solid black;
+            display: -webkit-flex;
+            display: flex;
+            /*交叉轴对齐方式*/
+            align-items: center;
+            /*主轴对齐方式*/
+            justify-content: space-between;
+            background-color: white;
+            margin: 10px;
+            padding: 5px 0px 5px 0px;
+        }
+        .box {
+            display: -webkit-flex;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid black;
+            height: 70%;
+            margin: 0px 5px 0px 0px;
+            padding: 5px 0px 5px 0px;
+            background-color: white;
+        }
+        .first_txt{
+            /*改变某个元素的交叉轴对齐方式*/
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+<div id="content">
+    <div class="root">
+        <div class="first_txt">Super</div>
+        <div class="box">
+            <div class="first_txt">Cat</div>
+            <div class="box">
+                <div class="first_txt">Apple</div>
+                <div class="box"><div class="first_txt">Pear</div></div>
+                <div class="box"><div class="first_txt">Pig</div></div>
+                <div class="box"><div class="first_txt">Cola</div></div>
+                <div class="box"><div class="first_txt">Soccer</div></div>
+            </div>
+            <div class="box"><div class="first_txt">Phone</div></div>
+            <div class="box">
+                <div class="first_txt"> </div>
+                <div class="box"><div class="first_txt">Book</div></div>
+                <div class="box"><div class="first_txt">School</div></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="first_txt">Note</div>
+            <div class="box">
+                <div class="first_txt">Human</div>
+                <div class="box"><div class="first_txt">Code</div></div>
+                <div class="box"><div class="first_txt">Operate</div></div>
+                <div class="box"><div class="first_txt">Man</div></div>
+            </div>
+            <div class="box">
+                <div class="first_txt">Program</div>
+                <div class="box">
+                    <div class="first_txt">Bement</div>
+                    <div class="box"><div class="first_txt">Cat</div></div>
+                </div>
+                <div class="box"><div class="first_txt">Gloss</div></div>
+            </div>
+        </div>
+        <div class="box"><div class="first_txt">Fish</div></div>
+    </div>
+</div>
+<div id="ops">
+    <button>前序遍历</button>
+    <button>后序遍历</button>
+</div>
+<div>
+    <input type="txt" value=""><button id="search">查 询</button>
+</div>
+<script src="task23.js"></script>
+</body>
+</html>

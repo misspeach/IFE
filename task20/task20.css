@@ -1,0 +1,20 @@
+.simulation{
+    text-align: center;/*如果元素宽度已知可以使用这种方法使其水平居中于视口*/
+}
+.wrap{
+    float: left;/*元素宽度未知的情况下，使用这种方法水平居中并自适应内容宽度*/
+    position: relative;
+    left: 50%;
+    margin: 5px;
+}
+.search{
+    margin-top: 5px;
+}
+#queue{
+    position: relative;
+    left:-50%;
+}
+#ops {
+    display: inline;
+    /*margin-bottom: 5px;*/
+}

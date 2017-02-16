@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task29</title>
+    <style>
+        body {
+            font: 14px 'Microsoft YaHei', 微软雅黑;
+
+        }
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        input {
+            font: inherit;
+            border: 1px solid darkgray;
+            border-radius: 4px;
+            width: 348px;
+            height: auto;
+            /*margin: 0 5px 0 20px;*/
+            /*input输入框会有默认的padding*/
+            padding: 8px 16px;
+            vertical-align: middle;
+            outline: none;
+        }
+
+        .right {
+            font: inherit;
+            border: 1px solid green;
+            border-radius: 4px;
+            width: 348px;
+            height: auto;
+            /*margin: 0 5px 0 20px;*/
+            /*input输入框会有默认的padding*/
+            padding: 8px 16px;
+            vertical-align: middle;
+            outline: none;
+        }
+
+        .wrong {
+            font: inherit;
+            border: 1px solid red;
+            border-radius: 4px;
+            width: 348px;
+            height: auto;
+            /*margin: 0 5px 0 20px;*/
+            /*input输入框会有默认的padding*/
+            padding: 8px 16px;
+            vertical-align: middle;
+            outline: none;
+        }
+
+        input:focus {
+            box-shadow: 0 0 3px dodgerblue;
+            -webkit-box-shadow: 0 0 3px dodgerblue;
+        }
+
+        #btn {
+            font: inherit;
+            border-radius: 4px;
+            border: 1px solid #fff;
+            background-color: dodgerblue;
+            color: #fff;
+            cursor: pointer;
+            padding: 8px 16px;
+            height: auto;
+        }
+
+        #result {
+            margin: 5px 0 0 45px;
+        }
+
+        .result_none {
+
+            color: darkgray;
+        }
+
+        .result_right {
+            color: green;
+        }
+
+        .result_wrong {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <span><label>名称</label>&nbsp&nbsp&nbsp</span>
+    <span><input type="text"></span>
+    <span><button id="btn">验证</button></span>
+</div>
+<div id="result" class="result_none">必填，长度为4～16个字符</div>
+<script src="task29.js"></script>
+</body>
+</html>
