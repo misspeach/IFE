@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task33</title>
+    <style>
+        table {
+            /*表格边框之间的边距*/
+            border-spacing: 0px;
+            text-align: center;
+        }
+
+        td {
+            width: 40px;
+            height: 40px;
+            padding: 0;
+        }
+
+        .bottom-b {
+            border-bottom: 1px solid #000;
+        }
+
+        .bottom-g {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .right-b {
+            border-right: 1px solid #000;
+        }
+
+        .right-g {
+            border-right: 1px solid #ccc;
+        }
+
+        #chessboard {
+            /*为了让棋子相对于棋盘进行绝对定位*/
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .chess-invisible {
+            display: none;
+        }
+
+        .chess-visible{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+        }
+        #execute{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <label>请输入棋盘规模：</label><input type="text" id="size" value="10"/>
+    <button id="make">生成</button>
+</div>
+<div id="chessboard">
+    <div  id="chess" class="chess-invisible">
+        <div id="direction" style="width: 40px;height: 10px;background-color: blue"></div>
+        <div id="chess-body" style="width: 40px; height: 30px; background-color: red"></div>
+    </div>
+</div>
+<div id="execute">
+    <!--<input type="text" id="introduction" value="GO"/>-->
+    <!--<button id="execute">执行</button>-->
+    <button>GO</button><button>TUN LEF</button><button>TUN RIG</button><button>TUN BAC</button>
+</div>
+<script src="task33.js"></script>
+</body>
+</html>
