@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task35</title>
+    <style>
+        table {
+            /*表格边框之间的边距*/
+            border-spacing: 0px;
+            text-align: center;
+        }
+
+        td {
+            width: 40px;
+            height: 40px;
+            padding: 0;
+        }
+
+        .bottom-b {
+            border-bottom: 1px solid #000;
+        }
+
+        .bottom-g {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .right-b {
+            border-right: 1px solid #000;
+        }
+
+        .right-g {
+            border-right: 1px solid #ccc;
+        }
+
+        #chessboard {
+            /*为了让棋子相对于棋盘进行绝对定位*/
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .invisible {
+            display: none;
+        }
+
+        .chess-visible {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            transition: 1s;
+        }
+
+        .execute {
+            margin-left: 20px;
+        }
+
+        #num {
+            float: left;
+            overflow: hidden;
+            background-color: gainsboro;
+            color: #fff;
+            text-align: center;
+            height: 200px;
+            width: 26px;
+            padding: 5px;
+            line-height: 20px;
+        }
+
+        #txt {
+            background-color: #000000;
+            color: green;
+            overflow: auto;
+            outline: none;
+            resize: none;
+            border: none;
+            padding: 5px;
+            margin: 0;
+            font: 14px sans-serif;
+            line-height: 20px;
+        }
+        .number{
+            color: #fff;
+            /*border: 1px solid #000;*/
+        }
+        .error{
+            border-radius: 50%;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <label>请输入棋盘规模：</label><input type="text" id="size" value="5"/>
+    <button id="make">生成</button>
+</div>
+<div id="chessboard">
+    <div id="chess" class="invisible">
+        <div id="direction" style="width: 40px;height: 10px;background-color: blue"></div>
+        <div id="chess-body" style="width: 40px; height: 30px; background-color: red"></div>
+    </div>
+</div>
+<div class="execute">
+    <button id="exe" disabled>执行</button>
+    <button id="reset">Refresh</button>
+    <div id="container" style="margin-top: 10px;position: relative;">
+        <!--<textarea id="num" rows="10"cols="1" disabled>-->
+        <!--</textarea>-->
+        <div id="num"></div>
+        <textarea id="txt" rows="10" cols="40"></textarea>
+    </div>
+</div>
+<script src="task35.js"></script>
+</body>
+</html>
