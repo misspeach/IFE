@@ -1,0 +1,173 @@
+body  {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: #333;
+    height: 60px;
+}
+
+.clear::after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+header #logo {
+    display: inline-block;
+    float: left;
+}
+
+#header-nav {
+    float: right;
+}
+#header-nav ul{
+    padding: 0;
+    margin: 0;
+}
+#header-nav > ul > li {
+
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#header-nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    /*设置行高等于box的高度，让单行文字垂直居中*/
+    line-height: 60px;
+}
+
+section {
+    background-color: #cccccc;
+    padding: 20px;
+}
+
+article {
+    border: 1px solid #cccccc;
+    box-shadow: 3px 3px 6px #666;
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+article:first-child {
+    margin-top: 0px;
+}
+
+article:last-child {
+    margin-bottom: 0px;
+}
+
+aside {
+    border: 1px solid #cccccc;
+    box-shadow: 3px 3px 6px #666;
+    background: #fff;
+    padding: 20px;
+    margin-right: 20px;
+
+}
+
+footer {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+footer span {
+    color: #fff;
+    padding: 20px;
+}
+
+article h4, h6 {
+    color: #999999;
+}
+
+article p {
+    text-indent: 2em;
+}
+
+ul.content {
+    list-style: none;
+}
+
+.img-wrapper {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.img-wrapper div:first-child {
+    margin-bottom: 10px;
+}
+
+.img-wrapper img {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+.cal {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    /*表格宽度随浏览器宽度变化*/
+    width: 100%;
+}
+
+.cal thead td {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #ccc;
+    padding: 4px 10px 3px 10px;
+}
+
+.cal tbody td {
+    padding: 4px 10px 3px 10px;
+    border: 1px solid #ccc;
+}
+
+.cal tfoot td {
+    background-color: #ccc;
+    padding: 4px 10px 3px 10px;
+}
+
+aside h4 {
+    border-left: 3px solid #ccc;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+.input {
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.input td:first-child {
+    text-align: right;
+    vertical-align: top;
+}
+
+.input span {
+    color: #666;
+}
+
+button {
+    width: 100%;
+    background-color: dodgerblue;
+    color: #fff;
+    border-style: none;
+    border-radius: 5px;
+    padding: 5px;
+}
