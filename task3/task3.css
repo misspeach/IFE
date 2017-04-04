@@ -1,0 +1,68 @@
+body{
+    padding: 20px;
+    margin: 0;
+}
+.common{
+    border: 1px solid #999;
+    padding: 20px;
+}
+.clear::after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+}
+img{
+    width: 80px;
+    height: 80px;
+    display: block;
+}
+#main{
+    /*清除浮动的方法：让父元素本身也浮动 或 让父元素本身overflow：auto／hidden 或 在父元素下方添加一个空白元素然后clear*/
+    /*float: left;*/
+    overflow: hidden;
+    background-color: #eee;
+    min-width: 600px;
+}
+#group{
+    float: left;
+    background-color: #fff;
+    width: 160px;
+}
+#group img{
+    float: left;
+}
+#group div{
+    /*设定文字自动换行*/
+    word-break: break-all;
+    float: right;
+    width: 65px;
+    text-align: center;
+}
+
+#des{
+    background-color: #fff;
+    margin-left: 220px;
+    margin-right: 140px;
+}
+#des p{
+    margin: 0;
+    font-size: 14px;
+}
+#member{
+    float: right;
+    background-color: #fff;
+    width:80px;
+}
+#member ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#member ul>li{
+    margin-bottom: 15px;
+}
+#member ul>li:last-child{
+    margin-bottom: 0px;
+}
