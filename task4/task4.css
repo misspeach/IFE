@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*父级元素充满屏幕*/
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.button {
+    border-style: none;
+    background-color: dodgerblue;
+    color: #fff;
+    padding: 10px;
+    /*cursor: pointer;*/
+    border-radius: 5px;
+    /*去掉按钮的选中框样式*/
+    outline: none;
+}
+
+.rectangle {
+    width: 400px;
+    height: 200px;
+    background-color: #ccc;
+}
+
+.circle {
+    background-color: #fc0;
+    width: 50px;
+    height: 50px;
+}
+
+#r1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* 水平居中也可以用CSS3中的translate，同样的 定高垂直居中也可以用负边距*/
+    margin-left: -200px;
+    /*不定高的垂直居中*/
+    transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+}
+
+#r2 {
+    position: relative;
+}
+
+#r3 {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+#c1_1 {
+    position: absolute;
+    border-bottom-right-radius: 50px;
+}
+
+#c2_1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 50px;
+}
+
+.wrapper-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-inline::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.wrapper-inline {
+    text-align: center;
+    font-size: 0;
+}
