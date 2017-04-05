@@ -1,13 +1,14 @@
-body  {
+body {
     padding: 0;
     margin: 0;
+    background-color: #cccccc;
 }
 
 header {
     background: #333;
+    width: 100%;
     height: 60px;
 }
-
 .clear::after {
     content: ".";
     display: block;
@@ -24,10 +25,12 @@ header #logo {
 #header-nav {
     float: right;
 }
-#header-nav ul{
+
+#header-nav ul {
     padding: 0;
     margin: 0;
 }
+
 #header-nav > ul > li {
 
     display: inline-block;
@@ -43,7 +46,6 @@ header #logo {
 }
 
 section {
-    background-color: #cccccc;
     padding: 20px;
 }
 
@@ -68,12 +70,13 @@ aside {
     box-shadow: 3px 3px 6px #666;
     background: #fff;
     padding: 20px;
-    margin-right: 20px;
+    margin: 20px 40px 20px 20px;
 
 }
 
 footer {
     background-color: #000;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
