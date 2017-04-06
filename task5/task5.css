@@ -1,0 +1,201 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #cccccc;
+    font: normal 100% Helvetica, Arial, sans-serif, '微软雅黑';
+    /*设置页面的最小宽度,确保导航栏不会被挤到头部下面*/
+    min-width: 620px;
+}
+
+/* general styles*/
+.clear::after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.secondary {
+    float: right;
+}
+
+/* construct styles */
+header {
+    background: #333;
+    width: 100%;
+    height: 60px;
+}
+
+header #logo {
+    display: inline-block;
+    height: 60px;
+    float: left;
+}
+
+#header-nav {
+    float: right;
+}
+
+#header-nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+#header-nav > ul > li {
+
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#header-nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    /*设置行高等于box的高度，让单行文字垂直居中*/
+    line-height: 60px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-right: 380px;
+}
+
+article {
+    border: 1px solid #cccccc;
+    box-shadow: 3px 3px 6px #666;
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+article:first-child {
+    margin-top: 0px;
+}
+
+article:last-child {
+    margin-bottom: 0px;
+}
+
+article h4, h6 {
+    color: #999999;
+}
+
+article p {
+    text-indent: 2em;
+}
+
+article ul.content {
+    list-style: none;
+}
+
+/*设置图片的大小随宽度自适应*/
+article img {
+    max-width: 100%;
+}
+
+article .img-wrapper {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+article .img-wrapper div:first-child {
+    margin-bottom: 10px;
+}
+
+article .img-wrapper img {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+#photos dd {
+    float: left;
+    height: 150px;
+    margin: 0 0 20px 20px;
+}
+
+article .cal {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    /*表格宽度随浏览器宽度变化*/
+    width: 100%;
+}
+
+article .cal thead td {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #ccc;
+    padding: 4px 10px 3px 10px;
+}
+
+article .cal tbody td {
+    padding: 4px 10px 3px 10px;
+    border: 1px solid #ccc;
+}
+
+article .cal tfoot td {
+    background-color: #ccc;
+    padding: 4px 10px 3px 10px;
+}
+
+aside {
+    border: 1px solid #cccccc;
+    box-shadow: 3px 3px 6px #666;
+    background: #fff;
+    padding: 20px;
+    width: 320px;
+}
+
+aside h4 {
+    border-left: 3px solid #ccc;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+aside .input {
+    font-size: 0.875em;
+    margin: 0 auto;
+}
+
+aside .input td:first-child {
+    text-align: right;
+    vertical-align: top;
+}
+
+aside .input span {
+    color: #666;
+}
+
+aside button {
+    width: 100%;
+    background-color: dodgerblue;
+    color: #fff;
+    border-style: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+footer {
+    background-color: #000;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+footer small {
+    font-size: 0.875em;
+}
