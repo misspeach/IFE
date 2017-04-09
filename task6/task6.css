@@ -1,0 +1,372 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin:0;
+    background-color: #cccccc;
+}
+
+header #logo {
+    width: 107px;
+    height: 61px;
+    background-color: #d45d5c;
+    padding-left: 3px;
+}
+
+header #address {
+    color: #ffffff;
+    font: 12px 'SimHei';
+    /*为了让文字沉于父元素的底部*/
+    line-height: 100px;
+}
+
+#header-line {
+    width: 892px;
+    height: 2px;
+    background-color: #938e8c;
+}
+
+header #date {
+    float: right;
+    display: inline-block;
+    /*防止行高将元素撑大，挡住aside*/
+    height: 61px;
+    color: #d45d5c;
+    font: 12px 'SimHei';
+    /*为了让文字沉于父元素的底部*/
+    line-height: 100px;
+}
+
+section {
+    margin: 40px 0;
+}
+
+#big-img {
+    width: 641px;
+    margin-right: 203px;
+    position: relative;
+}
+
+#big-img img {
+    display: block;
+    width: 641px;
+    height: 301px;
+}
+
+#big-img #left-opacity {
+    width: 191px;
+    height: 301px;
+    background-color: rgba(117, 184, 107, 0.6);
+    position: absolute;
+}
+
+#big-img #right-opacity {
+    width: 191px;
+    height: 301px;
+    background-color: rgba(212, 93, 92, 0.6);
+    position: absolute;
+    top: 0;
+    left: 450px;
+}
+
+aside {
+    width: 203px;
+    float: right;
+}
+
+#aside-line {
+    width: 203px;
+    height: 2px;
+    background-color: #cc8091;
+}
+
+aside .title {
+    font: 24px 'Microsoft YaHei';
+    color: #000000;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+aside .content {
+    font: 12px 'STKaiTi';
+    color: #676767;
+    margin: 10px 0;
+    line-height: 12px;
+}
+
+aside .number {
+    /*文字倾斜溢出*/
+    font: italic 116px 'Microsoft YaHei';
+    color: #75b86b;
+    text-indent: -0.15em;
+}
+
+aside .num-left {
+    font: 55px 'Microsoft YaHei';
+    color: #cc8091;
+    display: inline-block;
+}
+
+aside .txt-right {
+
+    font: 21px 'Microsoft YaHei';
+    color: #cc8091;
+    display: inline-block;
+    /*设置line-height */
+    line-height: 10px;
+}
+
+.three-columns {
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.one {
+    width: 30%;
+    float: left;
+}
+
+.one-header {
+    font: bold 16px 'Microsoft YaHei';
+    color: #418c59;
+    text-decoration: underline;
+}
+
+.one-content {
+    font: 12px SimSun;
+    color: #767777;
+    margin: 10px 0;
+}
+
+.three {
+    width: 30%;
+    float: right;
+}
+
+.three-header {
+    font: bold 16px 'Microsoft YaHei';
+    color: #cc7680;
+    text-decoration: underline;
+}
+
+.percent {
+    font: italic 12px 'Microsoft YaHei';
+    color: rgba(205, 74, 72, 0.7);
+}
+
+.two {
+    width: 30%;
+    float: left;
+    margin: 0 20px;
+}
+
+.two-header {
+    font: bold 16px 'Microsoft YaHei';
+    color: #d2994f;
+    text-decoration: underline;
+}
+
+.two-content {
+    font: 12px 'Microsoft YaHei';
+    color: rgba(35, 24, 21, 0.7);
+    margin: 10px 0;
+}
+
+#left {
+    width: 415px;
+    float: left;
+}
+
+.first-txt {
+    font: italic bold 72px SimHei;
+    color: #f5e327;
+}
+
+.middle-txt {
+    font: bold 42px SimHei;
+    color: #11456b;
+}
+
+.last-txt {
+    font: bold 33px SimHei;
+    color: #11456b;
+}
+
+#left-line {
+    width: 415px;
+    height: 2px;
+    background-color: #11456b;
+}
+
+.first {
+    font: 70px 'Microsoft YaHei';
+    color: #f5e327;
+    float: left;
+    /*line-height: 60px;*/
+    margin: -15px 5px 0 0;
+}
+
+.content {
+    font: 12px SimSun;
+    color: #767777;
+    margin: 16px 0;
+}
+
+#left img {
+    display: block;
+    width: 100px;
+    height: 200px;
+    float: right;
+    margin: 15px 0 15px 15px;
+}
+
+#right {
+    width: 458px;
+    float: right;
+}
+
+#right figure {
+    position: relative;
+}
+
+#right .hide {
+    width: 458px;
+    height: 61px;
+    background-color: rgba(1, 1, 1, 0.4);
+    position: absolute;
+    left: 0;
+    top: 214px;
+}
+
+.describe {
+    position: absolute;
+    bottom: 10px;
+    /*设置高度会改变垂直居中位置*/
+    /*height: 44px;*/
+    margin-left: 40px;
+    padding-left: 20px;
+    border-left: 3px solid #72b16a;
+}
+
+.describe .des_one {
+    font-size: 26px;
+    color: #fff;
+}
+
+.describe .des_two {
+    font-size: 12px;
+    font-style: italic;
+    color: #72b16a;
+}
+
+#right img {
+    width: 458px;
+    height: 275px;
+    display: block;
+}
+
+#right-content {
+    width: 459px;
+    height: 318px;
+    background-color: #F0E68C;
+    margin-top: 20px;
+    position: relative;
+}
+
+#right-header {
+    width: 260px;
+    height: 160px;
+    background-color: #d45d5c;
+    position: absolute;
+    left: 0;
+    top: 158px;
+    color: #ffffff;
+}
+
+#right-header-num {
+    font: 110px 'Microsoft YaHei';
+}
+
+#right-header-line {
+    width: 2px;
+    height: 86px;
+    background-color: #ffffff;
+    margin: 0 10px;
+}
+
+#right ul {
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+#right ul div {
+    background: url(img/up_arow.png) no-repeat 0 50%;
+    padding-left: 30px;
+    margin: 20px;
+}
+
+#right .align-left {
+    font: 16px SimSun;
+    color: #5a5b5b;
+}
+
+#right .align-right {
+    display: inline-block;
+    /*也可以用float 但是文字上移了*/
+    width: 40px;
+    text-align: right;
+    font: italic 12px SimSun;
+    color: #5a5b5b;
+}
+
+.citation {
+    width: 199px;
+    height: 160px;
+    position: absolute;
+    right: 0;
+    top: 158px;
+}
+
+blockquote {
+    font: italic 14px SimHei;
+    color: #5a5b5b;
+    line-height: 16px;
+    /*text-indent: 2em;*/
+    position: relative;
+    padding: 20px 10px 10px 45px;
+}
+
+blockquote::before {
+    font: 72px SimHei;
+    color: #d45d5c;
+    content: "\201C";
+    line-height: 50px;
+    position: absolute;
+    left: -25px;
+    top: 20px;
+}
+
+blockquote::after {
+    font: 72px SimHei;
+    color: #d45d5c;
+    content: "\201D";
+    line-height: 50px;
+    position: absolute;
+    bottom: -50px;
+    right: -25px;
+}
+
+#footer-line {
+    width: 892px;
+    height: 1px;
+    background-color: #938e8c;
+}
+
+.description {
+    font: 12px SimHei;
+    color: #d45d5c;
+    float: right;
+}
