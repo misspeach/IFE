@@ -1,0 +1,560 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-width: 990px;
+    background-color: #ffffff;
+    font: 16px 'SimHei';
+}
+
+header {
+    height: 59px;
+}
+
+/*小图标与文字对齐 将图标设置为文字容器的背景*/
+header .icon {
+    margin-left: 40px;
+    background: url(img/logo-32.png) no-repeat left;
+    text-indent: 2.5em;
+}
+
+header .icon span {
+    line-height: 55px;
+    font-size: 20px;
+}
+
+header ul {
+    list-style-type: none;
+
+}
+
+header ul li {
+    float: left;
+    display: inline-block;
+    line-height: 55px;
+    margin: 0 10px;
+}
+
+header ul li:first-child, li:last-child {
+    color: #E65253;
+}
+
+header ul li:last-child {
+    text-indent: 1em;
+    background: url(img/login.png) no-repeat left;
+}
+
+header ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #9A9A9C;
+}
+
+header ul li a:hover {
+    border-bottom: 4px solid #E65253;;
+}
+
+#intro {
+    height: 706px;
+    color: #ffffff;
+    background: url(img/life.jpg) no-repeat;
+    /*拉伸背景图像*/
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+}
+
+#intro .wrapper {
+    margin: 100px;
+}
+
+#intro .eng-big {
+    font-size: 60px;
+}
+
+#intro .chi-small {
+    font: 20px 'Microsoft YaHei';
+    margin-bottom: 30px;
+}
+
+#intro #start {
+    border-style: none;
+    color: #ffffff;
+    width: 332px;
+    height: 65px;
+    letter-spacing: 2px;
+    font: 25px 'Microsoft YaHei';
+    background-color: #E65253;
+}
+
+#slogan {
+    padding: 20px;
+}
+
+#slogan .img {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#slogan .img div {
+    width: 25%;
+}
+
+#slogan .img div img {
+    display: block;
+    margin: 0 auto;
+}
+
+#slogan .txt {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 40px;
+}
+
+#slogan .txt p {
+    display: inline-block;
+    width: 25%;
+    /* 固定文字的高度 让分隔栏显示一致*/
+    height: 50px;
+    padding: 0 40px;
+    font-size: 14px;
+    color: #9A9A9C;
+    border-right: 2px solid #9A9A9C;
+}
+
+#slogan .txt p:last-child {
+    border: none;
+}
+
+#ask {
+    /*height: 360px;*/
+    background-color: #EDEDED;
+    /*文字居中*/
+    text-align: center;
+}
+
+#ask div {
+    padding-top: 50px;
+}
+
+#ask div img {
+    display: block;
+    margin: 0 auto;
+}
+
+#ask p {
+    font-size: 50px;
+    color: #9A9A9C;
+    padding: 30px 0 50px 0;
+}
+
+#search {
+    height: 300px;
+    width: 100%;
+    background: url(img/map.jpg) no-repeat;
+    background-size: 100% 100%;
+    color: #ffffff;
+    font-family: 'Microsoft YaHei';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#search .search-title {
+    font-size: 20px;
+    /*margin-top:30px;*/
+}
+.horizon-seg {
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 10px auto;
+}
+
+#search .search-des {
+    font-size: 14px;
+    display: inline-block;
+}
+
+#search .selection {
+    margin-top: 30px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search .sel-mask {
+    position: relative;
+    width: 25%;
+    height: 37px;
+    margin: 0 20px;
+    background-color: #ffffff;
+}
+
+#search .sel-mask span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+    color: #9A9A9C;
+    font-size: 14px;
+}
+
+#search .sel-mask img {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+#search .sel-mask select {
+    position: absolute;
+    opacity: 0;
+    /*取消Chrome选中框*/
+    outline: none;
+    border-radius: 0;
+    border: 1px solid #ffffff;
+    /*去掉浏览器的默认样式*/
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /*appearance:none;*/
+    width: 234px;
+    height: 37px;
+    color: #9A9A9C;
+}
+
+/*Chrome中设置option样式无效*/
+#search .sel-mask select option {
+    padding-left: 10px;
+    color: #9A9A9C;
+    background-color: #cccccc;
+}
+
+#search .search-btn {
+    width: 234px;
+    height: 37px;
+    border-style: none;
+    color: #ffffff;
+    background-color: #E65253;
+    margin: 0 20px;
+    font-size: 14px;
+}
+
+#activity {
+    height: 603px;
+    background-color: #f8f8f8;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#activity .wrap {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#activity .act-mask {
+    text-align: center;
+    width: 25%;
+    margin: 0 10px;
+}
+
+#activity .act-mask:last-child {
+    margin-right: 40px;
+}
+
+#activity .act-mask:first-child {
+    margin-left: 40px;
+}
+
+#activity .act-mask .act-title-top {
+    color: #3C3C3D;
+    margin: 10px 0;
+}
+
+#activity .act-mask .act-title-bottom {
+    color: #9A9A9C;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#activity .act-mask .highlighted {
+    font-size: 20px;
+    letter-spacing: 1em;
+}
+
+#activity .act-mask .img_container {
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    padding: 20px 10px;
+}
+
+#activity .act-mask .img_container img {
+    display: block;
+    width: 100%;
+}
+
+#city {
+    height: 566px;
+    width: 100%;
+}
+
+#city #left {
+    width: 65%;
+    height: 100%;
+    background: url(img/socks.jpg) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    color: #ffffff;
+}
+
+.center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#city #right {
+    float: right;
+    width: 35%;
+    height: 100%;
+    text-align: center;
+}
+
+#city #right  .txt {
+    color: #cccccc;
+    text-align: left;
+    line-height: 2em;
+    margin: 20px 0;
+}
+.more-btn{
+    border-radius: 0;
+    border: 1px solid #E65253;
+    color: #E65253;
+    background-color: #ffffff;
+    padding: 8px 30px;
+}
+#city #right .pages{
+    width: 100%;
+    margin: 20px 0;
+}
+#city #right .page-focus{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #666666;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.focus{
+    background-color: #666666;
+}
+#about_us {
+    width: 100%;
+    height: 520px;
+    font-size: 20px;
+}
+#about_us .left-a-u{
+    float: left;
+    width: 35%;
+    height: 100%;
+    background-color: #E65253;
+}
+#about_us .right-a-u{
+    float: right;
+    width: 35%;
+    height: 100%;
+    background: url(img/subway.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+#about_us .center-a-u{
+    height: 100%;
+    margin-left: 35%;
+    margin-right: 35%;
+    position: relative;
+}
+.more-btn-2{
+    border-radius: 0;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background-color: #E65253;
+    padding: 8px 30px;
+}
+#volunteer {
+    height: 747px;
+    width: 100%;
+}
+#volunteer .top-vol{
+    width: 100%;
+    height: 30%;
+}
+#volunteer .top-vol .top-slogan{
+    font: 12px 'Microsoft YaHei';
+    color: #8F8D8E;
+}
+#volunteer .bottom-vol{
+    width: 100%;
+    height: 60%;
+    position: relative;
+}
+#volunteer .bottom-left-vol{
+    width: 30%;
+    float: left;
+    text-align: left;
+}
+#volunteer .bottom-left-vol .title-vol{
+    color: #8B898A;
+
+}
+#volunteer .bottom-left-vol .content-vol{
+    color: #8F8D8E;
+    font: 14px 'SimSun';
+
+}
+#volunteer .bottom-left-vol .icon-more{
+    background: url(img/arrow_down.png) no-repeat left;
+    float: right;
+}
+.icon-more span{
+    display: inline-block;
+    line-height: 16px;
+    margin-left: 18px;
+    vertical-align: top;
+    color: #8F8D8E;
+    font: 14px 'SimSun';
+
+}
+#volunteer .bottom-right-vol{
+    width: 60%;
+    text-align: left;
+    margin-left: 40%;
+    color: #8F8D8E;
+    font: 14px 'SimSun';
+}
+
+.wrapper-1{
+    display: grid;
+    grid-template-columns: 50% 15px 50%;
+    grid-template-rows: auto 15px auto 15px auto 15px auto;
+}
+.box{
+    background-color: #EDEDEF;
+    padding: 10px;
+}
+.name{
+    grid-column:1/2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.age{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.tel{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.address{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.desp{
+    grid-column: 1/4;
+    grid-row: 5/6;
+}
+
+.submit{
+    grid-column: 1/4;
+    grid-row: 7/8;
+    text-align: center;
+}
+.submit button{
+    border-style: none;
+    background-color: #EDEDEF;
+}
+#volunteer input[type="text"]{
+    outline: none;
+    border-style: none;
+    background-color: #EDEDEF;
+}
+
+#volunteer textarea{
+    outline: none;
+    border-style: none;
+    resize: none;
+    background-color: #EDEDEF;
+}
+
+#contact {
+    height: 356px;
+    background-color: #34373F;
+    position: relative;
+    color: #ffffff;
+}
+#contact .contact-info{
+    font: 12px 'SimSun';
+    margin: 10px 0;
+}
+#contact input[type="text"]{
+    outline: none;
+    border: none;
+    /*padding: 15px 10px;*/
+    width: 60%;
+    height: 43px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.contact-submit{
+    border: none;
+    background-color: #717179;
+    width: 80px;
+    height: 43px;
+    /*line-height: 43px;*/
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+#contact .images{
+    margin-top: 40px;
+}
+.contact-img{
+    margin: 0 20px;
+}
+footer {
+    height: 61px;
+    background-color: #30303A;
+    color: #ffffff;
+    font:12px 'SimSun';
+    padding: 0 40px;
+}
+footer span{
+    line-height: 61px;
+    display: inline-block;
+    vertical-align: baseline;
+}
